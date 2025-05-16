@@ -1,0 +1,103 @@
+@font-face {
+  font-family: "Helvetica";
+  src: url("fonts/helvetica_cyr_oblique.ttf"), url("fonts/EntezareZohoor2.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.header {
+  background-color: #f6f4f5;
+  font-family: "Helvetica";
+  border-bottom: 1px solid #cacad6;
+  padding: 19px 0 19px 0;
+  .hed {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    nav {
+      ul {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+        li {
+          a {
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 16px;
+            color: #5c5c5e;
+          }
+        }
+      }
+    }
+  }
+}
+
+.main {
+  font-family: "Helvetica";
+  .bg-clip {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  .hero{
+    display: flex;
+    align-items: center;
+    height: 1000px;
+    .content{
+      h1{
+        font-weight: 400;
+  font-size: 96px;
+  color: #424242;
+  margin-bottom: 10px;
+      }
+      h2{
+        font-weight: 400;
+  font-size: 36px;
+  color: #424242;
+      }
+      p{
+        font-weight: 400;
+  font-size: 13px;
+  color: #424242;
+  margin-bottom: 50px;
+      }
+      .buts{
+        display: flex;
+        .purp{
+          background: linear-gradient(180deg, #bc10d8 0%, #5000faed 100%);
+          padding: 21px 111px;
+          font-weight: 700;
+  font-size: 16px;
+  color: #f6f4f5;
+  border: 0px;
+        }
+        .white{
+          padding: 21px 106px;
+          background-color: #f6f4f5;
+          border-color: #bc10d8 #bc10d8 #5000faed #5000faed;
+        }
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+@media(min-aspect-ratio:16/9){
+  .bg-clip{
+    width: 100%;
+    height: auto;
+  }
+}
+@media(max-aspect-ratio:16/9){
+  .bg-clip{
+    width: auto;
+    height: 100%;
+  }
+}
